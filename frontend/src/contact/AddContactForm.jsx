@@ -12,7 +12,7 @@ export const AddContactForm = () => {
 
   const handleFormSubmit = async (data) => {
     try {
-      const response = await axiosInstance.post("/userauth/register", data);
+      const response = await axiosInstance.post("/add-contact", data);
 
       console.log("Contact added successfully: ", response.data);
       alert("contact added successfully");
